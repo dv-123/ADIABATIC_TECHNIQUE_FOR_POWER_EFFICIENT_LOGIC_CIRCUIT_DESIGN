@@ -1,0 +1,7 @@
+workspace loadfrom -path .
+cell open -design Inverter -cell Cell0 -type schematic -newwindow
+window move -left 130 -top 130 -width 858 -height 419 -undock -max 
+window fit -x0 -2125 -y0 -1324 -x1 2698 -y1 1405 -units iu
+workspace dockinglayout load -file dockinglayout.xml
+source open.design -relativeto user -encoding utf-8
+source open.design -relativeto design -encoding utf-8
