@@ -1,0 +1,42 @@
+# header information:
+Hinverter|9.07
+
+# Views:
+Vlayout|lay
+
+# Technologies:
+Tmocmos|ScaleFORmocmos()D300.0|mocmosAnalog()BT|mocmosNumberOfMetalLayers()I3
+
+# Cell comoslay;1{lay}
+Ccomoslay;1{lay}||mocmos|1593871516068|1593878466633||DRC_last_good_drc_area_date()G1593876600240|DRC_last_good_drc_bit()I18|DRC_last_good_drc_date()G1593876600240
+Ngeneric:Facet-Center|art@0||0|0||||AV
+NMetal-1-P-Active-Con|contact@4||-14|2|10||R|
+NMetal-1-P-Active-Con|contact@5||-5|2|10||R|
+NMetal-1-N-Active-Con|contact@6||-14|-20||||
+NMetal-1-N-Active-Con|contact@7||-5|-20||||
+NMetal-1-Polysilicon-1-Con|contact@9||-32|-12||||
+NN-Transistor|nmos@1||-9.5|-20.5|2||R||SIM_spice_model(D5G1;)SNMOS
+NPolysilicon-1-Pin|pin@5||-9.5|-12||||
+NMetal-1-Pin|pin@6||6|-11.5||||
+NMetal-1-Pin|pin@7||-5|-11.5||||
+Ngeneric:Invisible-Pin|pin@9||-55.5|6|||||SIM_spice_card(D5G1;)S[vdd vdd 0 DC 5,vin in 0 DC pwl 10ns 0 20ns 5 50ns 5 60n 0,cload out 0 250fF,.measure tran tf trig v(out) val=4.5 fall=1 td=8ns targ v(out) val=0.5 fall=1,.measure tran tr trig v(out) val=0.5 rise=1 td=50ns targ v(out) val=4.5 rise=1,.tran 0 100ns,".include C:\\electric\\C5_models.txt"]
+NP-Transistor|pmos@0||-9.5|2|12||R||SIM_spice_model(D5G1;)SPMOS
+NMetal-1-P-Well-Con|substr@0||-9|-32.5|10|||
+NMetal-1-N-Well-Con|well@0||-9.5|18.5|10|||
+AP-Active|net@1|||S1800|pmos@0|diff-bottom|-5.75|2|contact@5||-5|2
+AP-Active|net@2|||S0|pmos@0|diff-top|-13.25|2|contact@4||-14.5|2
+AN-Active|net@6|||S0|nmos@1|diff-top|-13.25|-20.5|contact@6||-14|-20.5
+AN-Active|net@7|||S0|contact@7||-5|-20.5|nmos@1|diff-bottom|-5.75|-20.5
+AMetal-1|net@8||1|S900|contact@6||-14|-20|substr@0||-14|-32.5
+AMetal-1|net@9||1|S900|well@0||-14|18.5|contact@4||-14|2
+APolysilicon-1|net@22|||S900|pmos@0|poly-left|-9.5|-7.5|pin@5||-9.5|-12
+APolysilicon-1|net@23|||S900|pin@5||-9.5|-12|nmos@1|poly-right|-9.5|-16
+APolysilicon-1|net@24||3|S1800|contact@9||-32|-12|pin@5||-9.5|-12
+AMetal-1|net@26||1|S900|contact@5||-5|2|pin@7||-5|-11.5
+AMetal-1|net@27||1|S900|pin@7||-5|-11.5|contact@7||-5|-20
+AMetal-1|net@28||1|S1800|pin@7||-5|-11.5|pin@6||6|-11.5
+Egnd||D5G2;|substr@0||U
+Ein||D5G2;|contact@9||U
+Eout||D5G2;|pin@6||U
+Evdd||D5G2;|well@0||U
+X
