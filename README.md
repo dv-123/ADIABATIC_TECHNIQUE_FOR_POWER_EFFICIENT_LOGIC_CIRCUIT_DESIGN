@@ -21,27 +21,27 @@ The equivalent circuit used to model the conventional CMOS circuits during charg
 
 The term CMOS stands for “Complementary Metal Oxide Semiconductor”. In CMOS inverter It consists of only two transistors, a pair of one N-type and one P-type transistor. The input Vin serves as the gate voltage for both transistors. The NMOS transistor has an input from ground and PMOS transistor has an input from Vdd. The terminal Vout is output. 
 
-(image)
+![](Images/1.PNG)
 
 As in fig 1. When Vin is high and equal to Vdd the NMOS transistor is ON and the PMOS is OFF. Hence direct current flows from Vout and the ground which shows that Vout = 0 V. On the other hand, when Vin is low then NMOS transistor is OFF and PMOS transistor is ON. 
 
-(image)
+![](Images/2.PNG)
 
 Above Fig.2  schematic circuit has been made by using Tanner tools on S-edit for simulation. In which width of PMOS is 3 times greater than NMOS i.e 810nm in PMOS and 270nm in NMOS. 
 
-(image)
+![](Images/3.PNG)
 
 # SIMULATION RESULTS 
 
 The results are verified for various combination of CMOS inverter:
 
-(image)
+![](Images/4.PNG)
 
-(image)
+![](Images/5.PNG)
 
 # Power Dissipation
 
-(image)
+![](Images/5.PNG)
 
 # ADIABATIC LOGIC FAMILIES 
 
@@ -53,21 +53,21 @@ Efficient Charge Recovery Logic (ECRL) is proposed as a candidate for low-energy
 # 1. ECRL Inverter 
 It consists of two cross-coupled transistors m1 and m2 and two N-functional blocks for the ECRL adiabatic logic block.  Power clock is used  for  ECRL  gates,  so  as  to recover and reuse the supplied energy. Both out and out bar are generated. 
 
-(image)
+![](Images/6.PNG)
 
-(image)
+![](Images/7.PNG)
 
 Initially, input ‘in’ is high and input ‘/in’ is low. When power clock (pck) rises from zero to VDD, output ‘out’ remains ground level. Output ‘/out’ follows the pck When pck reaches at VDD, outputs ‘out’ and ‘/out’ hold logic value zero and VDD respectively. This output values can be used for the next stage as an inputs. Now pck falls from VDD to zero, ‘/out’ returns its energy to pck hence delivered charge is recovered. ECRL uses four phase clocking rule to efficiently recover the charge delivered by pck/vdd. 
 
-(image)
+![](Images/8.PNG)
 
 # SIMULATION RESULTS
 
-(image)
+![](Images/9.PNG)
 
 # Power Dissipation 
 
-(image)
+![](Images/10.PNG)
 
 From above results we can see that in ECRL inverter Average Power consumed is less as compare to CMOS inverter. 
 
@@ -75,23 +75,23 @@ From above results we can see that in ECRL inverter Average Power consumed is le
 
 The schematic and of the PFAL inverter gate is shown below in Fig.10. Initially, input ‘in’ is high and input ‘/in’ is low. When power clock (pck) rises from zero to VDD, output ‘out’ remains ground level. Output ‘/out’ follows the pck. When pck reaches at VDD, outputs ‘out’ and ‘/out’ hold logic value zero and VDD respectively. This output values can be used for the next stage as an inputs. Now pck falls from VDD to zero, ‘/out’ returns its energy to pck hence delivered charge is recovered. PFAL uses four phase clocking rule to efficiently recover the charge delivered by pck.
 
-(image)
+![](Images/11.PNG)
 
-(image)
+![](Images/12.PNG)
 
-(image)
+![](Images/13.PNG)
 
 In this circuit we use three NMOS and PMOS and one inverter for out waveform.  
 
-(image)
+![](Images/14.PNG)
 
 # SIMULATION RESULTS 
 
-(image)
+![](Images/15.PNG)
 
 # Power Dissipation 
 
-(image)
+![](Images/16.PNG)
 
 From above results we can see that Average power consumed in PFAL Inverter 21.15uW is also less than as compare to ECRL inverter circuits. here it is found that adiabatic technique PFAL is better than ECRL based circuit.
 
@@ -104,16 +104,16 @@ o Supply Voltage Variation
 # 1. Transition Frequency Variation 
 Power dissipation per cycle versus switching frequency of the two adiabatic logic families    and CMOS for the inverter logic. 
 
-(image)
+![](Images/17.PNG)
 
 # 2. Load Capacitance Variation
 Fig. 15 shows the power dissipation per cycle versus load capacitance of the two adiabatic logic families and CMOS for the inverter logic.
 
-(image)
+![](Images/18.PNG)
 
 # 3.Supply Voltage Variation
 
-(image)
+![](Images/19.PNG)
 
 # CONCLUSION 
 From the above results, it can be concluded that circuits based on adiabatic techniques consumes very less power as compared to its conventional counterparts. here less energy consumption in adiabatic logic families can be still achieved than CMOS logic over the wide range of parameter variations. PFAL shows better energy savings than ECRL at the high frequency and high load capacitance.  ECRL is a low-energy, adiabatic logic. Simulation indicates power saving over static and other adiabatic logic families. The ECRL inverter chain shows 10-20 times power gain over a conventional inverter chain. ECRL shows large power saving and shows the promising usage of ECRL in a low power system. PFAL has the potential to be used to implement arbitrary reversible logic functions. It has also been shown that by making PFAL fully reversible, considerably reduced power consumption can be obtained.in adiabatic we get output as the function and its complement and requires special power supply. 
